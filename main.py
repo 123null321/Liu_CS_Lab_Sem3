@@ -7,8 +7,7 @@ init(autoreset=True)
 
 def main():
     N = 29
-    print(Fore.CYAN + "Лабораторная работа №2")
-    print(Fore.GREEN + "Создаем фигуры")
+    print( "Лабораторная работа №2")
 
     rectangle = Rectangle(N, N, "синего")
     circle = Circle(N, "зеленого")
@@ -18,7 +17,6 @@ def main():
     print(Fore.GREEN + str(circle))
     print(Fore.RED + str(square))
 
-    #print(Fore.YELLOW + "Готово!")
 
 if __name__ == "__main__":
     main()
