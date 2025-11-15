@@ -18,7 +18,7 @@ def main():
     print(Fore.GREEN + str(circle))
     print(Fore.RED + str(square))
 
-    print(Fore.YELLOW + "Готово!")
+    #print(Fore.YELLOW + "Готово!")
 
 if __name__ == "__main__":
     main()
