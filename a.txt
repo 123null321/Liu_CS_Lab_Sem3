@@ -1,0 +1,1 @@
+python3 lab_python_fp/process_data.py data_light.json
