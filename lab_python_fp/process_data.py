@@ -16,7 +16,7 @@ if len(sys.argv) > 1:
     path = sys.argv[1]
 else:
     # 也可以改成绝对路径或你自己的默认路径
-    path = 'data_light.json'
+    path = '../data_light.json'
 
 with open(path, encoding='utf-8') as f:
     data = json.load(f)
