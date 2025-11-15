@@ -2,7 +2,6 @@ import sys
 import math
 
 def input_coefficient(name):
-    """安全输入函数，确保输入的是实数"""
     while True:
         value = input(f"Введите коэффициент {name}: ")
         try:
@@ -11,7 +10,6 @@ def input_coefficient(name):
             print("Ошибка: введите число!")
 
 def get_coefficients():
-    """从命令行参数或键盘获取系数 A, B, C"""
     coeffs = []
     for i, name in enumerate(["A", "B", "C"], start=1):
         try:
@@ -22,7 +20,6 @@ def get_coefficients():
     return coeffs
 
 def solve_biquadratic(a, b, c):
-    """求解双二次方程 Ax^4 + Bx^2 + C = 0 的实根"""
     if a == 0:
         print("Это не биквадратное уравнение (A=0).")
         return []
