@@ -1,7 +1,6 @@
 from operator import itemgetter
 
 class Operator:
-    """Оператор языка программирования"""
     def __init__(self, id, name, complexity, lang_id):
         self.id = id                  
         self.name = name              
@@ -10,16 +9,14 @@ class Operator:
 
 
 class Language:
-    """Язык программирования"""
+    
     def __init__(self, id, name):
         self.id = id          
         self.name = name      
 
 
 class OperLang:
-    """
-    'Операторы языка' для реализации связи многие-ко-многим
-    """
+    
     def __init__(self, lang_id, op_id):
         self.lang_id = lang_id  
         self.op_id = op_id      
@@ -54,7 +51,6 @@ opers_langs = [
 
 
 def main():
-    """Основная функция"""
 
    
     one_to_many = [
