@@ -54,9 +54,6 @@ def f3(arg):
 
 @print_result
 def f4(arg):
-    """
-    为每个职业生成 [100000, 200000] 的随机工资，并拼接成字符串
-    """
     salaries = list(gen_random(len(arg), 100000, 200000))
     return [f"{name}, зарплата {salary} руб." for name, salary in zip(arg, salaries)]
 

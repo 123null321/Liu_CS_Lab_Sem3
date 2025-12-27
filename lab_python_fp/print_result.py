@@ -4,12 +4,6 @@ from functools import wraps
 
 
 def print_result(func):
-    """
-    装饰器：
-    - 打印函数名
-    - 打印返回值（按类型不同格式化）
-    - 返回原始结果
-    """
     @wraps(func)
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)

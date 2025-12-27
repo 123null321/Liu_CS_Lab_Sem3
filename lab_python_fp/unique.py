@@ -1,11 +1,7 @@
 # unique.py
 
 class Unique(object):
-    """
-    迭代器：遍历 items，自动去重
-    ignore_case=True 时，字符串按小写比较
-    """
-
+   
     def __init__(self, items, **kwargs):
         self._iterator = iter(items)
         self.ignore_case = bool(kwargs.get('ignore_case', False))
